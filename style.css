@@ -1,0 +1,116 @@
+/* إعدادات عامة وألوان */
+:root {
+    --gold: #d4af37;
+    --silver: #c0c0c0;
+    --dark-bg: #111111;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--white);
+}
+
+/* شريط التواصل العلوي */
+.top-bar {
+    background-color: #000;
+    color: var(--gold);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* الهيدر */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(17, 17, 17, 0.9); /* شفافية بسيطة */
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: var(--silver);
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--gold);
+}
+
+/* الواجهة الرئيسية مع الصورة كخلفية */
+.hero-section {
+    /* دمج الصورة 436509.jpg مع طبقة شفافة غامقة عشان الكلام يظهر */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('436509.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    color: var(--gold);
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+
+.hero-content p {
+    font-size: 24px;
+    color: var(--silver);
+    margin-bottom: 10px;
+}
+
+.hero-content .slogan {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* زر التصفح */
+.btn-primary {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: transparent;
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid var(--gold);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--gold);
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
