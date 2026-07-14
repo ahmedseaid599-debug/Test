@@ -8,25 +8,37 @@
 </head>
 <body>
 
-    <!-- شريط التواصل العلوي -->
-    <div class="top-bar">
-        <p>📞 01029025565 | 📍 Egypt - Asyut - Al-Qusiyah</p>
-    </div>
-
     <!-- الهيدر واللوجو -->
     <header class="navbar">
+        <!-- أيقونة التلات شرط -->
+        <div class="menu-icon" id="menuBtn">
+            &#9776;
+        </div>
+        
         <div class="logo">
             <h1>LOFT <span>ASLAM SEAID</span></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">المزادات الحالية</a></li>
-                <li><a href="#">الأخبار</a></li>
-                <li><a href="#">تسجيل الدخول</a></li>
-            </ul>
-        </nav>
+        
+        <!-- مساحة فاضية عشان اللوجو يفضل في النص -->
+        <div class="spacer"></div> 
     </header>
+
+    <!-- القائمة الجانبية المخفية -->
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" class="close-btn" id="closeBtn">&times;</a>
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">المزادات</a></li>
+            <li><a href="#">سعر ثابت</a></li>
+            <li><a href="#">معرض الطيور</a></li>
+            <li><a href="#">منشورات</a></li>
+            <li><a href="#">الأخبار</a></li>
+            <li><a href="#">كيف يعمل</a></li>
+            <li><a href="#">إتصل بنا</a></li>
+            <hr class="menu-divider">
+            <li><a href="#" class="login-link">تسجيل الدخول</a></li>
+        </ul>
+    </div>
 
     <!-- الواجهة الرئيسية -->
     <section class="hero-section">
@@ -38,5 +50,7 @@
         </div>
     </section>
 
+    <!-- ملف الجافاسكريبت لتشغيل القائمة -->
+    <script src="script.js"></script>
 </body>
 </html>
